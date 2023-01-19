@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header, footer {
+    background-color: black;
+    color: white;
+}
+header {
+    height: auto;
+    padding: 0 80px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* main */
+main img {
+    width: 100%;
+}
+/* Container holding the image and the text */
+div.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+div.movie_details {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+main h1, .button {
+    text-transform: uppercase;
+}
+.button {
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+}
+.button:hover {
+    background-color: purple;
+}
+/* footer */
+.fa {  
+    text-align: center;    
+    font-size: 30px;  
+    width: 50px;  
+  }  
+.fa-facebook, .fa-twitter, .fa-instagram  {    
+    color: white;  
+} 
+footer > div, footer > div > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+} 
