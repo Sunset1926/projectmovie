@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity bill</title>
+
+    <!--Google Fonts for  website's body and headings-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Monthly Electricity Bill Calculator</h1>
+</header>
+<section id="form_input" style="display:block">
+    <div>
+        <h2>Form to calculate the total cost of Electricity bill</h2>
+        <p>Please fill in the below form to calculate the total cost of your electricity bill.</p><br/>
+        <form>
+            <!-- Field for the user’s name -->
+            <label for="name_text_box">Name: [required]</label><br/>
+            <input id="name_text_box" type="text" placeholder="Enter your name"/><br/>
+            <label id="error-message-1"></label>
+            <br/>
+
+            <!-- Field for the user’s email address -->
+            <label for="email_box">Email: [required]</label><br/>
+            <input id="email_box" type="email" placeholder="Enter your Email"/><br/>
+            <label id="error-message-2"></label>
+            <br/>
+
+            <!-- Amount of electricity used, in kilowatt hours (kwh) -->
+            <label>Amount of electricity used, in kilowatt hours (kwh):</label>
+            <br/>
+            <label for="morning_electricity">Electricity used in the morning: [required]</label>
+            <input type="number" id="morning_electricity"/>
+            <label id="error-message-3"></label>
+            <br/>  
+            
+            <label for="afternoon_electricity">Electricity used in the afternoon:</label>
+            <input type="number" id="afternoon_electricity"/>
+            <label id="empty-field-1"></label>
+            <br/>
+
+            <label for="evening_electricity">Electricity used in the evening:</label>
+            <input type="number" id="evening_electricity"/>
+            <label id="empty-field-2"></label>
+            <br/>
+            <label id="error-negative-value"></label>
+            <br/>
+
+            <!-- Selecting a Province -->
+            <label for="province">Choose a Province: [required]</label>
+            <select id="province">
+                <option value="selectProvince">Select Province</option>
+                <option value="alberta">Alberta</option>
+                <option value="quebec">Quebec</option>
+                <option value="british_columbia">British Columbia</option>
+            </select>
+            <label id="error-message-4"></label>
+            <br/>
+
+            <!-- Checkbox for solar energy -->
+            <label for="solar_energy">Check the box, if your home uses solar energy</label>
+            <input type="checkbox" id="solar_energy"/>
+            <br/>
+            
+            <!-- Button to calculate the total cost -->
+            <div id="div_btn">
+                <button type='button' id="btn">Calculate</button>
+            </div>
+        </form>
+    </div>
+</section>
+<section id="form_output" style="display:none">
+    <div>
+        <h2>Receipt</h2>
+        <p>Please find the receipt of your electricity bill below:</p>
+        <div id="receipt"></div>
+        <button type='button' id="start_over">Start Over</button>
+    </div>
+</section>
+<footer>
+    <p>© 2023 Shagun's Monthly Hydro Bill Calculator</p>
+</footer>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   position: absolute;
+   background-color: rgb(222, 246, 248);
+   overflow: hidden; /* Scrollbar was appearing at the bottom of webpage, used this property to hide it */
+}
+h1, h2 {
+   font-family: 'Kanit', sans-serif;
+}
+
+/* header and footer */
+header, footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 5px;
+   height: auto;
+   position: fixed;
+   width: 100vw;
+}
+header {
+   position: relative;
+}
+footer {
+   bottom: 0;
+}
+
+/* Section for Form input*/
+section#form_input > div {
+   width: 510px;
+   margin: 0 auto;
+   font-size: 15px;
+}
+form > * {
+   margin: 5px 0;
+}
+input#name_text_box, input#email_box, input#morning_electricity, input#afternoon_electricity , input#evening_electricity {
+   width: 500px;
+   height: 20px;
+} 
+select#province {
+   height: 20px;
+}
+div#div_btn {
+   width: 80px;
+   margin: 10px auto;
+}
+button {
+   height: 30px;
+   width: 80px;
+   border-radius: 20px;
+}
+button:hover {
+   background-color: #3b95b4;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+label#error-message-1, label#error-message-2, label#error-message-3, label#error-message-4, label#error-negative-value, label#empty-field-1, label#empty-field-2 {
+   background-color: yellow;
+}
+
+/* Section for Receipt output*/
+section#form_output > div {
+   width: 475px;
+   margin: 0 auto;
+   font-size: 18px;
+}
+section#form_output > div > *, div#receipt > * {
+   padding: 5px 0;
+}
+button#start_over {
+   margin-top: 15px;
+}
